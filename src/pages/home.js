@@ -5,7 +5,7 @@ function home() {
   content.innerHTML = "";
 
   const items = document.createElement("div");
-  items.setAttribute("id", "secondary");
+  items.setAttribute("id", "home");
 
   const main_txt = document.createElement("h2");
   main_txt.textContent = "You fucking donkey";

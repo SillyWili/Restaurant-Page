@@ -3,7 +3,7 @@ function about() {
   content.innerHTML = "";
 
   const items = document.createElement("div");
-  items.setAttribute("id", "secondary");
+  items.setAttribute("id", "about");
 
   const name = document.createElement("p");
   name.textContent = "Guest3295";

@@ -7,6 +7,9 @@ function menu() {
   const content = document.querySelector("#content");
   content.innerHTML = "";
 
+  const items = document.createElement("div");
+  items.setAttribute("id", "menu");
+
   const item1 = document.createElement("div");
   const item1_img = document.createElement("img");
   const price1 = document.createElement("p");
@@ -17,7 +20,7 @@ function menu() {
   item1.appendChild(item1_img);
   item1.appendChild(price1);
   item1.appendChild(text1);
-  content.appendChild(item1);
+  items.appendChild(item1);
 
   const item2 = document.createElement("div");
   const item2_img = document.createElement("img");
@@ -29,7 +32,7 @@ function menu() {
   item2.appendChild(item2_img);
   item2.appendChild(price2);
   item2.appendChild(text2);
-  content.appendChild(item2);
+  items.appendChild(item2);
 
   const item3 = document.createElement("div");
   const item3_img = document.createElement("img");
@@ -41,7 +44,9 @@ function menu() {
   item3.appendChild(item3_img);
   item3.appendChild(price3);
   item3.appendChild(text3);
-  content.appendChild(item3);
+  items.appendChild(item3);
+
+  content.appendChild(items);
 }
 
 export { menu };
