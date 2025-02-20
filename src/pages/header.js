@@ -1,3 +1,5 @@
+import "../assets/styles/header.css";
+
 function header() {
   const header = document.querySelector("header");
   const title = document.createElement("h1");
@@ -15,6 +17,8 @@ function header() {
   nav.appendChild(menu);
   nav.appendChild(about);
   header.insertBefore(title, nav);
+
+  return { home, about, menu };
 }
 
 export { header };
