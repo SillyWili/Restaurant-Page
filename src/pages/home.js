@@ -4,17 +4,22 @@ function home() {
   const content = document.querySelector("#content");
   content.innerHTML = "";
 
-  const maintxt = document.createElement("h2");
-  maintxt.textContent = "You fucking donkey";
-  content.appendChild(maintxt);
+  const items = document.createElement("div");
+  items.setAttribute("id", "secondary");
+
+  const main_txt = document.createElement("h2");
+  main_txt.textContent = "You fucking donkey";
+  items.appendChild(main_txt);
 
   const img = document.createElement("img");
   img.src = gordon;
-  content.appendChild(img);
+  items.appendChild(img);
 
-  const secondarytxt = document.createElement("h2");
-  secondarytxt.textContent = "Active since 1999";
-  content.appendChild(secondarytxt);
+  const secondary_txt = document.createElement("h2");
+  secondary_txt.textContent = "Active since 1999";
+  items.appendChild(secondary_txt);
+
+  content.appendChild(items);
 }
 
 export { home };

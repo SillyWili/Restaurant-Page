@@ -1,6 +1,7 @@
 import { header } from "./pages/header.js";
 import { home } from "./pages/home.js";
 import { menu } from "./pages/menu.js";
+import { about } from "./pages/about.js";
 import "./assets/styles/index.css";
 
 const nav = header();
@@ -16,4 +17,8 @@ home_btn.addEventListener("click", () => {
 
 menu_btn.addEventListener("click", () => {
   menu();
+});
+
+about_btn.addEventListener("click", () => {
+  about();
 });
